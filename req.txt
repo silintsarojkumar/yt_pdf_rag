@@ -1,0 +1,66 @@
+langchain-community
+langchain
+langchain_groq
+faiss-cpu
+python-dotenv
+langchain-text-splitters
+langchain-community
+langchain_google_genai
+langchain_huggingface
+youtube-transcript-api
+sentence-transformers
+langchain_google_genai
+
+langchain
+langchain-core
+
+# OpenAI Integration
+langchain-openai
+openai
+
+# Anthropic Integration
+langchain-anthropic
+
+# Google Gemini (PaLM) Integration
+langchain-google-genai
+google-generativeai
+
+# Hugging Face Integration
+langchain-huggingface
+transformers
+huggingface-hub
+
+# Environment Variable Management
+python-dotenv
+
+# Machine Learning Utilities
+numpy
+scikit-learn
+
+
+
+# Project
+pymupdf
+python-docx
+faiss-cpu
+langchain-community
+langchain-text-splitters
+pypdf
+
+
+
+flask
+flask-cors
+gunicorn
+
+numpy
+pandas
+scikit-learn
+scipy
+joblib
+nltk
+rapidfuzz
+requests
+
+python-dotenv
+httpx
