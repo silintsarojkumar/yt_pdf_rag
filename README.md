@@ -195,17 +195,20 @@ npm run dev
 ### 1. RAG Studio Home Interface (`http://localhost:3000`)
 Landing page offering quick navigation between **YouTube RAG** and **PDF RAG** workflows.
 
-![RAG Studio Home Interface](assets/screenshots/home.png)
+![RAG Studio Home Interface](<img width="1535" height="862" alt="Screenshot 2026-11-13 011525" src="https://github.com/user-attachments/assets/4ec9faa1-2576-4b04-b371-4716ce3bb03d" />
+)
 
 ### 2. PDF Upload & Question Answering (`http://localhost:3000/pdf`)
 Side-by-side PDF document viewer and **Chat with the PDF** assistant answering questions grounded in the uploaded PDF content.
 
-![PDF Upload and Question Answering](assets/screenshots/pdf-qa.png)
+![PDF Upload and Question Answering](<img width="1516" height="768" alt="Screenshot 2026-11-13 011716" src="https://github.com/user-attachments/assets/42c68da2-8c31-4f44-8ee9-91d976c433bf" />
+)
 
 ### 3. YouTube URL Input & Video Question Answering
 Side-by-side embedded YouTube video player and **Chat with the video** assistant generating structured summaries and answers from the video transcript.
 
-![YouTube URL Input and Question Answering](assets/screenshots/youtube-qa.png)
+![YouTube URL Input and Question Answering](<img width="1502" height="770" alt="image" src="https://github.com/user-attachments/assets/b5423ff2-0b19-4824-b6cc-51ac35a343ca" />
+)
 
 ### How to Commit Your Screenshots to GitHub
 
