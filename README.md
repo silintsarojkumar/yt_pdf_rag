@@ -195,53 +195,15 @@ npm run dev
 ### 1. RAG Studio Home Interface (`http://localhost:3000`)
 Landing page offering quick navigation between **YouTube RAG** and **PDF RAG** workflows.
 
-![RAG Studio Home Interface](<img width="1535" height="862" alt="Screenshot 2026-11-13 011525" src="https://github.com/user-attachments/assets/4ec9faa1-2576-4b04-b371-4716ce3bb03d" />
-)
+![RAG Studio Home Interface](assets/screenshots/home.png)
 
 ### 2. PDF Upload & Question Answering (`http://localhost:3000/pdf`)
 Side-by-side PDF document viewer and **Chat with the PDF** assistant answering questions grounded in the uploaded PDF content.
 
-![PDF Upload and Question Answering](<img width="1516" height="768" alt="Screenshot 2026-11-13 011716" src="https://github.com/user-attachments/assets/42c68da2-8c31-4f44-8ee9-91d976c433bf" />
-)
+![PDF Upload and Question Answering](assets/screenshots/pdf-qa.png)
 
 ### 3. YouTube URL Input & Video Question Answering
 Side-by-side embedded YouTube video player and **Chat with the video** assistant generating structured summaries and answers from the video transcript.
 
-![YouTube URL Input and Question Answering](<img width="1502" height="770" alt="image" src="https://github.com/user-attachments/assets/b5423ff2-0b19-4824-b6cc-51ac35a343ca" />
-)
+![YouTube URL Input and Question Answering](assets/screenshots/youtube-qa.png)
 
-### How to Commit Your Screenshots to GitHub
-
-Save your three screenshots into `assets/screenshots/` using the exact filenames above and push them to your repository:
-
-```bash
-mkdir -p assets/screenshots
-# Save your images as:
-# - assets/screenshots/home.png
-# - assets/screenshots/pdf-qa.png
-# - assets/screenshots/youtube-qa.png
-
-git add assets/screenshots/ README.md
-git commit -m "docs: add RAG Studio screenshots to README"
-git push origin main
-```
-
-## Demo
-
-* **Live Demo:** `[Live Demo Link Coming Soon]`
-* **Video Walkthrough:** `[YouTube Demonstration Video Link Coming Soon]`
-
-## Troubleshooting
-
-* **Missing Python Dependencies (`ModuleNotFoundError`):**
-  Ensure your virtual environment is activated (`source .venv/Scripts/activate` in Git Bash) before running `pip install -r req.txt`. If `youtubeMCP` raises an import error, verify `youtubeMCP.py` is present in the root directory alongside `vector.py`.
-* **Invalid or Missing `GROQ_API_KEY`:**
-  If `ChatGroq` fails with an authentication error, verify that `.env` exists in the root directory and contains a valid `GROQ_API_KEY` without extra quotes or spaces.
-* **YouTube Transcript Extraction Errors:**
-  Videos without closed captions/subtitles, private videos, or region-restricted URLs will fail during transcript retrieval. Test with a public video that has English captions enabled.
-* **FAISS Installation or Runtime Errors on Windows:**
-  `req.txt` uses `faiss-cpu`. If installation fails, upgrade `pip` (`python -m pip install --upgrade pip`) and ensure you are using a supported 64-bit Python version (e.g., Python 3.10–3.12).
-* **Hugging Face Embedding Download / API Errors:**
-  On first run, `HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")` downloads model weights locally. Ensure you have an active internet connection or set `HUGGINGFACEHUB_API_TOKEN` in `.env` if you hit rate limits.
-* **Backend / Frontend Connection & CORS Errors:**
-  `api.py` explicitly allows CORS requests from `http://localhost:3000`. If your frontend runs on a different port, add that origin to `allow_origins` in `api.py` and confirm the backend is running on `http://127.0.0.1:8000`.
